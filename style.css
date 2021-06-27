@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.showcase{
+    height: 70vh;
+    margin-bottom: 400px;
+    background-color: #3392ff;
+}
+.showcase .form-con{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    padding:35px 40px;
+    box-shadow: 7px 6px 20px -6px #333;;
+}
+.form-con h3{
+    font-size:1.5em;
+    font-weight: 100;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.showcase .form-con form{
+    display: flex;
+    flex-direction: column;
+}
+.showcase .form-con form input{
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    outline: none;
+    border-bottom: 2px solid rgb(204, 204, 204);
+}
+.showcase .form-con form a{
+   padding:7px 25px;
+   border-radius: 3px;
+   margin-top: 15px;
+   width:33%;
+   background-color: #2687f5;
+   /* border: 1px solid black; */
+   color: white;
+   margin-left: 1px;
+}
+.showcase .logo h2{
+    padding:10px 130px;
+    font-size: 1.8em;
+}
+.showcase .main{
+    display: flex;
+    flex-direction: column;
+    padding:160px 0px 0 130px;
+}
+.showcase .main h1{
+    font-size: 2.1em;
+    padding-bottom: 20px;
+} 
+.showcase .main p{
+    font-size:.9em;
+    padding-bottom: 20px;
+}
+.showcase .main a{
+    padding:10px 12px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.card-con{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+.cards img{
+    width: 150px;
+    filter: contrast(10%);
+}
+.cards{
+    text-align: center;
+}
+.heading-con{
+    text-align: center;
+}
+.server{
+    background-color: #2687f5;
+    display: flex;
+    justify-content: space-around;
+    margin:150px 0;
+    padding:30px 70px;
+    text-align: center;
+    align-items:center;
+}
+.server .server-stuff h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.server .server-stuff h2{
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.server img{
+    filter: invert(100%);
+    width: 500px;
+}
+.server .server-stuff a{
+    padding:7px 10px;
+    background-color: #1581fc;
+    border:2px solid black;
+    border-radius: 5px;
+}
+.langs .head-con{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.langs .lang-cards-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.langs .lang-cards-con .langcards{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    border-radius:7px;
+    margin-top: 50px;
+    margin-right: 10px;
+    box-shadow:0px 0px 20px -6px #333;
+}
+
+.langs .lang-cards-con .langcards:hover{
+    transform: translateY(-15px);
+    transition: .5s;
+}
+@media (max-width:1031px) {
+    .showcase .form-con{
+        top: 350px;
+    }
+    .server img{
+        display: none;
+    }
+    .server{
+        padding:100px 0;
+    }
+}
+@media (max-width:732px) {
+    .heading-con h1{
+        font-size: 1.1em;
+    }
+    .cards img{
+        width: 90px;
+    }
+    .cards{
+        margin-right: 0;
+        margin-bottom: 100px;
+        font-size: 90%;
+    }
+    .showcase{
+        text-align: center;
+        height: 100vh;
+    }
+    .showcase .form-con{
+        top: 450px;
+    }
+    .showcase .main{
+        padding:110px 0px 0 0px;
+    }
+    .showcase .logo h2{
+        padding:20px 0px;
+    }
+}
+@media (max-width:433px) {
+    .showcase .form-con{
+        top: 500px;
+        padding: 30px;
+        right:50px;
+        width:300px;
+    }
+}
+@media (max-width:363px) {
+    .showcase .form-con{
+        right:30px;
+    }
+}
